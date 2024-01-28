@@ -10,7 +10,7 @@ class Solution:
 
         for n in nums: 
             cur += n
-            # find the diffrence to search for how many arrays can we use to satisfy the res 
+            # find the diffrence to search for how many arrays can we use to satisfy the sum k that we look for
             dif = cur - k
 
             # search and add the number of arrays with prefix sum dif
