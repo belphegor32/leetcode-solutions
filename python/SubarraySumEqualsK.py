@@ -1,6 +1,6 @@
 from collections import defaultdict
 class Solution:
-    def subarraySum(self, nums: List[int], k: int) -> int:
+    def subarraySum(self, nums, k: int) -> int:
         # make a count dict to keep a track of prefix sums
         count = defaultdict(int)
         # base case in the dict for prefix sum = 0
