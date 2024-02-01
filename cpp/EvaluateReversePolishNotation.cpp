@@ -1,6 +1,7 @@
 #include <iostream> 
 #include <stack>
 #include <vector>
+#include <string>
 using namespace std;
 class Solution {
 public:
@@ -9,7 +10,7 @@ public:
         
         // use stack and append values until you met an operator, if an operator is met we use it on the last two added values in the stack
         for(int i = 0; i < tokens.size(); i++){
-            if(tokens[i] == "+" or tokens[i] == "-" or tokens[i] == "*" or tokens[i] == "/"){
+            if(tokens[i] == "+" || tokens[i] == "-" || tokens[i] == "*" || tokens[i] == "/"){
                 int val2 = stack1.top();
                 stack1.pop();
                 int val1 = stack1.top();
