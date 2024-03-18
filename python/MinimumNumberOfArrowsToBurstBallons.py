@@ -12,7 +12,7 @@ class Solution:
             # if overlap, then we can burst to ballons at once
             if cur[0] <= prev[1]:
                 res -= 1
-                prev[0] = min(prev[0], cur[0])
+                prev[0] = cur[0]
                 prev[1] = min(prev[1], cur[1])
             # if there is no overlap we just move on
             elif cur[0] > prev[1]:
